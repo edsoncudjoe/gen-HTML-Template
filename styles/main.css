@@ -64,44 +64,39 @@ body {
     .ab-container {
         background-color: rgb(45,137,239);
         color: rgb(255,255,255);
-        display: inline;
-    
         text-align: center;
         width: 100%;
     }
     
     .ab-content {
-        height: 325px;
         margin: 0 auto;
         overflow: hidden;
+        text-align: center;
     }
     
     .ab-text-container {
-        background-color: chartreuse;
-        height: 300px;
+        display: inline-block;
+        text-align: center;
+        width: 40%;
     }
     
     .ab-text {
-        float: left;
-        /*height: 200px;*/
-        margin: auto;
-        margin-top: 50px;
-        /*padding: 0 40px;*/
-        width: 410px;
+        height: auto;
+        padding: 40px;
+        width: 400px;
     }
     
+    
     .ab-main-container {
-        background-color: brown;
-        height: 205px;
-       
-        float: right;
+        display: inline-block;
+        height: 300px;
+        padding: 0;
+        width: 300px;
     }
     
     .ab-main {
-        background: url('http://placehold.it/200x300');
         height: 300px;
-        margin: 0 auto;
-        width: 200px;
+        margin: 10px auto;  
     }
     
     .pr-container {
@@ -133,15 +128,18 @@ body {
         background-color: rgb(45,137,239);
         color: rgb(255,255,255);
         height: auto;
-        padding: 40px;
-        text-align: center;
-        width: 100%;
     }
     
     .sk-content {
-        margin: 0 auto;
-        padding: 40px;
-        width: 50%;
+        border: 5px dotted orange;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sk-content h3,
+    .sk-content p {
+        margin-right: 100px;
+        text-align: center;
     }
     
     .cn-container {
