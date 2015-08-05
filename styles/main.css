@@ -22,8 +22,6 @@ body {
     
     nav {
         background-color: rgb(0,0,0);
-        color: rgb(255,255,255);
-        padding: 20px;
         padding-right: 100px;
         text-align: center;
         width: 100%;
@@ -35,17 +33,16 @@ body {
     }
     
     nav li { 
-        border: 1px solid red;
         display: inline;
-        font-size: 130%;
+        font-size: 100%;
         font-weight: bold;
-        margin: 10px;
+        margin: 5px;
         text-decoration: none; 
     }
     
     nav li a {
         color: rgb(255,255,255);
-        padding: 18px;
+        padding: 10px;
     }
     
     .head-shot { 
@@ -90,13 +87,13 @@ body {
     .ab-main-container {
         display: inline-block;
         height: 300px;
-        padding: 0;
-        width: 300px;
+        padding: 20px;
+        width: 330px;
     }
     
     .ab-main {
         height: 300px;
-        margin: 10px auto;  
+        margin: 10px auto;
     }
     
     .pr-container {
@@ -128,22 +125,19 @@ body {
         background-color: rgb(45,137,239);
         color: rgb(255,255,255);
         height: auto;
+        text-align: center;
     }
     
     .sk-content {
-        border: 5px dotted orange;
+        display: inline-block;
         margin-left: auto;
         margin-right: auto;
     }
     
-    .sk-content h3,
-    .sk-content p {
-        margin-right: 100px;
-        text-align: center;
-    }
     
     .cn-container {
         padding: 10px;
+        text-align: center;
     }
     
     .cn-form {
@@ -154,7 +148,7 @@ body {
     
     textarea {
         min-height: 100px;
-        min-width: 400px;
+        width: 250px;
     }
     
     footer {
@@ -168,124 +162,151 @@ body {
 }
 
 @media screen and (min-width: 421px) {
-    html, body {
+    html, 
+    body {
         margin: 0;
         padding: 0;
     }
-        nav {
-        width: 100%;
-        padding-right: 100px;
-        text-align: center;
-        padding: 20px;
+    
+    nav {
         background-color: rgb(0,0,0);
         color: rgb(255,255,255);
-    }
-    nav ul {
+        padding: 20px;
+        padding-right: 100px;
         text-align: center;
-        margin-left: -60px;
+        width: 100%;
     }
+    
+    nav ul {
+        margin-left: -60px;
+        text-align: center;
+    }
+    
     nav li { 
         display: inline-block; 
-        text-decoration: none; 
-        margin: 10px;
         font-size: 130%;
         font-weight: bold;
-        border: 1px solid red;
+        margin: 10px;
+        text-decoration: none; 
     }
-        nav li a {
+    
+    nav li a {
         color: rgb(255,255,255);
         padding: 18px;
     }
+    
     header { 
-        width: 100%;
         margin: 0;
         padding: 10px; 
         text-align: center;
+        width: 100%;
     }
-        .head-shot { 
+    
+    .head-shot { 
         background: url('http://placehold.it/150x150');
-        height: 150px;
-        width: 150px;
         border: 2px solid green; 
         border-radius: 100px;
+        height: 150px;
         margin: 50px auto;
+        width: 150px;
     }
+    
     h1 {
         padding: 30px;
     }
+    
     .ab-container {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
         background-color: rgb(45,137,239);
         color: rgb(255,255,255);
         display: inline-block;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
     }
+    
     .ab-content {
-        border: 1px solid red;
         margin: 0 auto;
         width: 90%;
     }
+    
     .ab-text {
-        /*width: 50%;*/
-        padding: 0 30px;
         margin: auto;
         margin-top: 30px;
+        padding: 3px 30px; 
     }
-     .pr-container {
+    
+    .pr-container {
         background-color: rgb(255,255,255);
-        width: 100%;
         margin-right: 20px;
+        width: 100%;
     }
+    
     .pr-content {
-        text-align: center;
         padding: 40px;
+        text-align: center;
     }
+    
     .pr-box {
         display: inline-block;
-        padding: 10px;
         margin: 12px;
+        padding: 10px;
     }
+    
     .peek {
         background: url('http://placehold.it/100x100');
-        height: 100px;
-        width: 100px;
         border-radius: 100px;
+        height: 100px;
         margin: 0 auto;
+        width: 100px;
     }
+    
     .sk-container {
-        width: 100%;
-        padding: 40px;
-        text-align: center;
         background-color: rgb(45,137,239);
         color: rgb(255,255,255);
         height: auto;
+        padding: 40px;
+        text-align: center;
+        width: 100%;
     }
+    
     .sk-content {
-        width: 70%;
-        /*margin: 0 auto;*/
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0 40px;
+        width: 70%;
     }
+    
+    .sk-content p,
+    .sk-content h3 {
+        margin-left: -50px;
+    }
+    
     .cn-container {
         padding: 10px;
     }
+    
     .cn-form {
-        width: 40%;
         margin: 40px auto;
         padding: 20px 0px 20px 20px;
+        width: 40%;
     }
+    
     textarea {
         min-height: 100px;
-        min-width: 200px;
+        width: 250px;
     }
+    
     footer {
-        width: 100%;
-        text-align: center;
-        padding: 40px;
         background-color: rgb(0,0,0);
         color: rgb(255,255,255);
-        padding-right: 100px;
+        padding: 40px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    footer p {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -298,7 +319,7 @@ body {
         color: rgb(255,255,255);
     }
     nav ul {
-        width: 80%;
+        width: 60%;
         margin-left: 0;
     }
     nav li {
@@ -338,7 +359,6 @@ body {
         
     }
     .ab-content {
-        border: 1px solid red;
         margin: 0 auto;
     }
     .ab-text {
@@ -348,6 +368,12 @@ body {
         margin-top: 30px;
         /*border: 1px solid yellow;*/
     }
+    
+    .ab-main-container,
+    .ab-main {
+        display: none;
+    }
+    
     .pr-container {
         background-color: rgb(255,255,255);
         width: 100%;
@@ -401,5 +427,11 @@ body {
         padding: 40px;
         background-color: rgb(0,0,0);
         color: rgb(255,255,255);
+    }
+    
+    footer p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 }
